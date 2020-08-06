@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:'Exo 2', sans-serif;
+}
+
+/* Хедер */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 23px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.surprise_box {
+  width: 199px;
+  height: 54px;
+  font-size: 14px;
+}
+
+.flex_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icons {
+  width: 16px;
+  height: 16px;
+  padding: 0 9px 0 9px;
+}
+
+.social_icons {
+  padding: 0 5px 0 5px;
+}
+
+.btn {
+  width: 244px;
+  height: 55px;
+  background: #FF6A3B;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*блок меню для телефона*/
+
+.menu_block {
+  display: none;
+}
+
+/*блок меню пк*/
+
+.main_screen {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: calc(100vh - 100px);
+}
+
+aside {
+  flex: 0 0 16%;
+  padding: 2%;
+  font-size: 16px;
+}
+
+.menu_pc li {
+  color: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.menu_pc li:first-child {
+  color: #000000;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 106, 59, 0.5);
+  padding-top: 30px;
+}
+
+.menu_pc li:last-child {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 10px;
+}
+
+/*основной экран*/
+
+article {
+  flex: 0 0 80%;
+  background: center top no-repeat url("img/background.png");
+  color: #fff;
+}
+
+.main_text {
+  width: 466px;
+  margin-left: 10%;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.first_paragraph {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.second_paragraph {
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.third_paragraph {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+/*блок преимуществ*/
+
+.advantages_block {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advant_paragraph {
+  font-size: 32px;
+  padding-top: 67px;
+  padding-bottom: 94px;
+}
+
+.advant_paragraph span {
+  color: #FF6A3B;
+}
+
+.advant_enum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 45px 75px 45px;
+}
+
+.advant_block {
+  width: 300px;
+}
+
+.advant_block img {
+  width: 66px;
+  height: 66px;
+  padding-bottom: 43px;
+}
+
+.advant_head {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+
+
+@media only screen and (max-width: 1125px) {
+
+  /* Хедер */
+
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height:auto;
+  }
+
+  .surprise_box {
+    width: 283px;
+    height: 39px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 16px;
+  }
+
+  .flex_data {
+    padding-bottom: 9px;
+  }
+
+  .social_icons {
+    display: none;
+  }
+
+  .btn {
+    width: 80%;
+    height: 49px;
+  }
+
+  /*блок меню для телефона*/
+
+  .menu_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 19px 15px 12px 15px;
+  }
+
+  /*блок меню для пк*/
+
+  .main_screen {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  aside {
+    display: none;
+  }
+
+  /*основной экран*/
+
+  article {
+    background: center top no-repeat url("img/background.png");
+    color: #fff;
+  }
+
+  .main_text {
+    margin: 0 auto;
+    padding: 180px 10px 64px 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .first_paragraph {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  div.first_paragraph p{
+    padding-top: 10px;
+  }
+
+  .second_paragraph {
+    font-size: 78px;
+    font-weight: 600;
+  }
+
+  .third_paragraph {
+    font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  /*блок преимуществ*/
+
+  .advant_paragraph {
+    font-size: 25px;
+    padding: 24px 15px 0 15px;
+  }
+
+  .advant_enum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .advant_block {
+    width: 100%;
+  }
+
+  .advant_block img {
+    width: 66px;
+    height: 66px;
+    padding-bottom: 18px;
+    padding-top: 50px;
+  }
+
+  .advant_head {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+  }
+
+}
