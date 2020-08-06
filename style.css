@@ -81,6 +81,22 @@ aside {
   font-size: 16px;
 }
 
+.wave {
+  position: absolute;
+}
+
+.img_back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.img_front {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .menu_pc li {
   color: rgba(0, 0, 0, 0.7);
   list-style-type: none;
@@ -247,6 +263,14 @@ article {
   .menu_pc li {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .img_back {
+    display: none;
+  }
+
+  .img_front {
+    display: none;
   }
 
   /*основной экран*/
