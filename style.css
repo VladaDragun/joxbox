@@ -195,6 +195,26 @@ article {
   padding-bottom: 15px;
 }
 
+/* Футер */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 10px;
+}
+
+.logoAW {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_text {
+  margin: 30px 0 30px 20px;
+}
 
 
 @media only screen and (max-width: 1125px) {
@@ -341,6 +361,27 @@ article {
     font-size: 18px;
     text-transform: uppercase;
     padding-bottom: 6px;
+  }
+
+  /* Футер */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logoAW {
+    margin: 10px auto;
+  }
+
+  .footer_text {
+    text-align: center;
+    width: 95%;
+    padding: 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
 }
